@@ -1,0 +1,8 @@
+status:
+  x-ngsi:
+    uri: 'https://w3id.org/saref#temperature'
+    model: 'https://schema.org/Number'
+    properties: *commonMeta
+  type: number
+  format: float
+  description: Property related to some measurements that are characterized by a certain value that is measured in a temperature unit (degree_Celsius, degree_Fahrenheit, or degree_kelvin)
