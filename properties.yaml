@@ -1,3 +1,12 @@
+---
+properties: &commonMeta 
+    providedBy:
+        $ref: "ngsi-ld.yaml#/providedBy"
+    observedAt:
+        $ref: "ngsi-ld.yaml#/observedAt"
+    unitCode:
+        $ref: "ngsi-ld.yaml#/unitCode"
+
 status:
   x-ngsi:
     uri: 'https://w3id.org/saref#temperature'
