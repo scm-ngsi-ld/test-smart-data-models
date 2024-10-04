@@ -2,10 +2,10 @@
   "@context": [
     "https://raw.githubusercontent.com/smart-data-models/dataModel.WasteManagement/master/context.jsonld",
     {
-      "batteryPercentage": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/battery-percentage.html#/batteryPercentage",
-      "solarCharge": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/solar-charge.html#/solarCharge",
-      "numberOfThrowins": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-throwins.html#/numberOfThrowins",
-      "numberOfPressings": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-pressings.html#/numberOfPressings"
+      "batteryPercentage": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/battery-percentage.html/batteryPercentage",
+      "solarCharge": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/solar-charge.html/solarCharge",
+      "numberOfThrowins": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-throwins.html/numberOfThrowins",
+      "numberOfPressings": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-pressings.html/numberOfPressings"
     }
   ]
 }
