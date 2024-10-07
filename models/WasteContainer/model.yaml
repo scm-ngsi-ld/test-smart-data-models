@@ -206,6 +206,16 @@ WasteContainer:
       type: string
       x-ngsi:
         type: Property
+    districtId:
+      description: 'The district identifier of which the container is a part of within the Smart City Manager platform'
+      type: nummber
+      x-ngsi:
+        type: Property
+    districtName:
+      description: 'The district name of which the container is a part of within the Smart City Manager platform'
+      type: string
+      x-ngsi:
+        type: Property
     fillingLevel:
       description: Filling level of the container
       maximum: 1

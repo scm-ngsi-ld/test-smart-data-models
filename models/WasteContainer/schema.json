@@ -25,6 +25,14 @@
           ],
           "description": "Property. NGSI Entity Type: It has to be WasteContainer"
         },
+        "districtId": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The district identifier of which the container is a part of within the Smart City Manager platform"
+        },
+        "districtName": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text'. The district name of which the container is a part of within the Smart City Manager platform"
+        },
         "fillingLevel": {
           "type": "number",
           "minimum": 0,
