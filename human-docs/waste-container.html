@@ -1,0 +1,403 @@
+<style>
+  div.blueTable {
+    border: 1px solid #1c6ea4;
+    background-color: #eeeeee;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  .divTable.blueTable .divTableCell,
+  .divTable.blueTable .divTableHead {
+    border: 1px solid #aaaaaa;
+    padding: 3px 2px;
+  }
+  .divTable.blueTable .divTableBody .divTableCell {
+    font-size: 13px;
+  }
+  .divTable.blueTable .divTableRow:nth-child(even) {
+    background: #d0e4f5;
+  }
+  .divTable.blueTable .divTableHeading {
+    background: #1c6ea4;
+    background: -moz-linear-gradient(
+      top,
+      #5592bb 0%,
+      #327cad 66%,
+      #1c6ea4 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      #5592bb 0%,
+      #327cad 66%,
+      #1c6ea4 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      #5592bb 0%,
+      #327cad 66%,
+      #1c6ea4 100%
+    );
+    border-bottom: 2px solid #444444;
+  }
+  .divTable.blueTable .divTableHeading .divTableHead {
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    border-left: 2px solid #d0e4f5;
+  }
+  .divTable.blueTable .divTableHeading .divTableHead:first-child {
+    border-left: none;
+  }
+
+  .blueTable .tableFootStyle {
+    font-size: 14px;
+    font-weight: bold;
+    color: #ffffff;
+    background: #d0e4f5;
+    background: -moz-linear-gradient(
+      top,
+      #dcebf7 0%,
+      #d4e6f6 66%,
+      #d0e4f5 100%
+    );
+    background: -webkit-linear-gradient(
+      top,
+      #dcebf7 0%,
+      #d4e6f6 66%,
+      #d0e4f5 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      #dcebf7 0%,
+      #d4e6f6 66%,
+      #d0e4f5 100%
+    );
+    border-top: 2px solid #444444;
+  }
+  .blueTable .tableFootStyle {
+    font-size: 14px;
+  }
+  .blueTable .tableFootStyle .links {
+    text-align: right;
+  }
+  .blueTable .tableFootStyle .links a {
+    display: inline-block;
+    background: #1c6ea4;
+    color: #ffffff;
+    padding: 2px 8px;
+    border-radius: 5px;
+  }
+  .blueTable.outerTableFooter {
+    border-top: none;
+  }
+  .blueTable.outerTableFooter .tableFootStyle {
+    padding: 3px 5px;
+  }
+  /* DivTable.com */
+  .divTable {
+    display: table;
+  }
+  .divTableRow {
+    display: table-row;
+  }
+  .divTableHeading {
+    display: table-header-group;
+  }
+  .divTableCell,
+  .divTableHead {
+    display: table-cell;
+  }
+  .divTableHeading {
+    display: table-header-group;
+  }
+  .divTableFoot {
+    display: table-footer-group;
+  }
+  .divTableBody {
+    display: table-row-group;
+  }
+</style>
+<div class="divTable blueTable">
+  <div class="divTableHeading">
+    <div class="divTableRow">
+      <div class="divTableHead"><h1>WasteContainer</h1></div>
+    </div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableCell">
+      <h2>Definition</h2>
+      A waste container
+    </div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableCell">
+      <h2>Version</h2>
+      0.4.0
+    </div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableCell">
+      <h2>Original Schema</h2>
+      <a
+        href="https://raw.githubusercontent.com/smart-data-models/dataModel.WasteManagement/master/WasteContainer/schema.json"
+        >https://raw.githubusercontent.com/smart-data-models/dataModel.WasteManagement/master/WasteContainer/schema.json</a
+      >
+    </div>
+  </div>
+  <div class="divTableRow">
+    <div class="divTableCell"><h3>Attributes of the entity</h3></div>
+  </div>
+  <ul>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/RFID"
+        >RFID</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/actuationHours"
+        >actuationHours</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/address">address</a></li>
+    <ul>
+      <li>
+        <a href="https://smartdatamodels.org/addressCountry">addressCountry</a>
+      </li>
+      <li>
+        <a href="https://smartdatamodels.org/addressLocality"
+          >addressLocality</a
+        >
+      </li>
+      <li>
+        <a href="https://smartdatamodels.org/addressRegion">addressRegion</a>
+      </li>
+      <li><a href="https://smartdatamodels.org/district">district</a></li>
+      <li>
+        <a href="https://smartdatamodels.org/postOfficeBoxNumber"
+          >postOfficeBoxNumber</a
+        >
+      </li>
+      <li><a href="https://smartdatamodels.org/postalCode">postalCode</a></li>
+      <li>
+        <a href="https://smartdatamodels.org/streetAddress">streetAddress</a>
+      </li>
+      <li><a href="https://smartdatamodels.org/streetNr">streetNr</a></li>
+    </ul>
+    <li>
+      <a href="https://smartdatamodels.org/alternateName">alternateName</a>
+    </li>
+    <li><a href="https://smartdatamodels.org/annotations">annotations</a></li>
+    <li><a href="https://smartdatamodels.org/areaServed">areaServed</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/binCapacity"
+        >binCapacity</a
+      >
+    </li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/binColor"
+        >binColor</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/binFullnessThreshold"
+        >binFullnessThreshold</a
+      >
+    </li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/binId"
+        >binId</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/binLoggedTime"
+        >binLoggedTime</a
+      >
+    </li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/binMaxLoad"
+        >binMaxLoad</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/binRecommendedLoad"
+        >binRecommendedLoad</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/cargoWeight"
+        >cargoWeight</a
+      >
+    </li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/category"
+        >category</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/color">color</a></li>
+    <li><a href="https://smartdatamodels.org/dataProvider">dataProvider</a></li>
+    <li><a href="https://smartdatamodels.org/dateCreated">dateCreated</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/dateLastCleaning"
+        >dateLastCleaning</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/dateLastEmptying"
+        >dateLastEmptying</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/dateModified">dateModified</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/dateServiceStarted"
+        >dateServiceStarted</a
+      >
+    </li>
+    <li><a href="http://purl.org/dc/terms/description">description</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/fillingLevel"
+        >fillingLevel</a
+      >
+    </li>
+    <li>id</li>
+    <li><a href="https://smartdatamodels.org/image">image</a></li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/isleId"
+        >isleId</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/license_plate"
+        >license_plate</a
+      >
+    </li>
+    <li><a href="https://uri.etsi.org/ngsi-ld/location">location</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/methaneConcentration"
+        >methaneConcentration</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/name">name</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/nextActuationDeadline"
+        >nextActuationDeadline</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/nextCleaningDeadline"
+        >nextCleaningDeadline</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/owner">owner</a></li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/refDevice"
+        >refDevice</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/refWasteContainerIsle"
+        >refWasteContainerIsle</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/refWasteContainerModel"
+        >refWasteContainerModel</a
+      >
+    </li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/regulation"
+        >regulation</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/responsible"
+        >responsible</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/seeAlso">seeAlso</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/serialNumber"
+        >serialNumber</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/source">source</a></li>
+    <li><a href="https://uri.etsi.org/ngsi-ld/status">status</a></li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/storedWasteCode"
+        >storedWasteCode</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/storedWasteKind"
+        >storedWasteKind</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/storedWasteOrigin"
+        >storedWasteOrigin</a
+      >
+    </li>
+    <li>
+      <a
+        href="https://smartdatamodels.org/dataModel.WasteManagement/temperature"
+        >temperature</a
+      >
+    </li>
+    <li><a href="https://smartdatamodels.org/timeInstant">timeInstant</a></li>
+    <li>type</li>
+    <li>
+      <a href="https://smartdatamodels.org/dataModel.WasteManagement/wardId"
+        >wardId</a
+      >
+    </li>
+    
+    <li>
+      <a href="https://scm-ngsi-ld.github.io/smart-data-models/human-docs/battery-percentage.html/batteryPercentage"
+        >batteryPercentage</a
+      >
+    </li>
+    <li>
+      <a href="https://scm-ngsi-ld.github.io/smart-data-models/human-docs/solar-charge.html/solarCharge"
+        >solarCharge</a
+      >
+    </li>
+    <li>
+      <a href="https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-throwins.html/numberOfThrowins"
+        >numberOfThrowins</a
+      >
+    </li>
+    <li>
+      <a href="https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-pressings.html/numberOfPressings"
+        >numberOfPressings</a
+      >
+    </li>
+  </ul>
+  <div class="divTableRow">
+    <div class="divTableCell"><h3>Required attributes</h3></div>
+  </div>
+  <ul>
+    <li>id</li>
+    <li>type</li>
+    <li>location</li>
+  </ul>
+</div>
