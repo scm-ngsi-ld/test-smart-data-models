@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$schemaVersion": "0.3.0",
+  "$schemaVersion": "0.4.0",
   "modelTags": "",
-  "$id": "https://smart-data-models.github.io/dataModel.WasteManagement/WasteContainer/schema.json",
+  "$id": "https://scm-ngsi-ld.github.io/smart-data-models/models/WasteContainer/schema.json",
   "title": " - Waste Management / Waste Container",
   "description": "A waste container",
   "type": "object",
@@ -99,6 +99,10 @@
           "type": "string",
           "description": "Property. Model:'https://schema.org/serialNumber'. Serial number of the container"
         },
+        "solarCharge": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The amount of solar charge the container is receiving. Expressed in the Ampere-hour format"
+        },
         "regulation": {
           "type": "string",
           "description": "Property. Regulation under which the container is operating. Model:'http://schema.org/Text'"
@@ -135,6 +139,14 @@
           "type": "string",
           "format": "date-time",
           "description": "Property. Model:'https://schema.org/DateTime'. Deadline for next cleaning"
+        },
+        "numberOfThrowins": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The number of times something has been thrown into the container"
+        },
+        "numberOfPressings": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The number of times the container has pressed its trash"
         },
         "isleId": {
           "type": "string",
@@ -198,6 +210,10 @@
         },
         "timeInstant": {
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/timeInstant"
+        },
+        "batteryPercentage": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The percentage of the battery"
         },
         "binCapacity": {
           "type": "number",
