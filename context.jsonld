@@ -7,7 +7,7 @@
       "numberOfPressings": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-pressings.html/numberOfPressings",
       "districtId": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/district-id.html/districtId",
       "districtName": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/district-name.html/districtName",
-
+      
       "RFID": "https://smartdatamodels.org/dataModel.WasteManagement/RFID",
       "WasteContainerIsle": "https://smartdatamodels.org/dataModel.WasteManagement/WasteContainerIsle",
       "WasteContainerModel": "https://smartdatamodels.org/dataModel.WasteManagement/WasteContainerModel",
@@ -102,6 +102,6 @@
       "type": "@type",
       "wardId": "https://smartdatamodels.org/dataModel.WasteManagement/wardId",
       "weight": "https://smartdatamodels.org/dataModel.WasteManagement/weight",
-      "width": "https://smartdatamodels.org/dataModel.WasteManagement/width",
+      "width": "https://smartdatamodels.org/dataModel.WasteManagement/width"
   }
 }
