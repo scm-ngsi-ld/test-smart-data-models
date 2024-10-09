@@ -587,15 +587,11 @@ WasteContainer:
       x-ngsi:
         type: Property
     status:
-      description: 'Container''s status from the point of view of safety. Enum:''ok , lidOpen , dropped , moved , vandalized , burning , unknown''.  -   `ok`. Container is where it must be and stands properly. `lidOpen`. Container''s lid has been opened and not closed after a certain amount of time. `dropped`. Container has been dropped for some reason. `moved`. Container has been moved from its regular position and has not come back. `vandalized`. Container has been damaged or destroyed due to vandalism. `burning`. Container is burning and an immediate action has to be taken. `unknown`. The status of the container is not known to the system'
+      description: 'Container''s status from the Smart City Manager Platform. Enum:''available, error, no_contact''.  -   `available`. Container has no issues and is actively communicating. `error`. Container has one or more issues, might still be communicating. `no_contact`. Container has not communicated in a while.'
       enum:
-        - ok
-        - lidOpen
-        - dropped
-        - moved
-        - vandalized
-        - burning
-        - unknown
+        - available
+        - error
+        - no_contact
       type: string
       x-ngsi:
         type: Property

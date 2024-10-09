@@ -120,19 +120,26 @@
 <div class="divTable blueTable">
   <div class="divTableHeading">
     <div class="divTableRow">
-      <div class="divTableHead"><h1>districtName</h1></div>
+      <div class="divTableHead"><h1>status</h1></div>
     </div>
   </div>
   <div class="divTableRow">
     <div class="divTableCell">
       <h2>Definition</h2>
-      The district name of which the container is a part of within the Smart City Manager platform.<br />
+      Container's status from the Smart City Manager Platform.
+      <br><br>
+      Enum
+        <ul>
+          <li>`available`. Container has no issues and is actively communicating.</li>
+          <li>`error`. Container has one or more issues, might still be communicating.</li>
+          <li>`no_contact`. Container has not communicated in a while.</li>
+        </ul>
     </div>
   </div>
   <div class="divTableRow">
     <div class="divTableCell">
       <h3>Data Types</h3>
-      text<br />
+      text
     </div>
   </div>
   <div class="divTableRow">
