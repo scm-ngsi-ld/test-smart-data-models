@@ -160,7 +160,7 @@
           "type": "string",
           "description": "Property. Identifier (or name) of the isle where the container is placed. This attribute should be used when entities of type `WasteContainerIsle` are not being modelled specifically. Otherwise, `refWasteContainerIsle` should be used"
         },
-        "status": {
+        "scmStatus": {
           "type": "string",
           "enum": [
             "available",

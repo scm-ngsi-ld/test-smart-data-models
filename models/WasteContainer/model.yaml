@@ -586,7 +586,7 @@ WasteContainer:
       type: string
       x-ngsi:
         type: Property
-    status:
+    scmStatus:
       description: 'Container''s status from the Smart City Manager Platform. Enum:''available, error, no-contact''.  -   `available`. Container has no issues and is actively communicating. `error`. Container has one or more issues, might still be communicating. `no-contact`. Container has not communicated in a while.'
       enum:
         - available
