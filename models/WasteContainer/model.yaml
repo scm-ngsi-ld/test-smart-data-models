@@ -667,6 +667,6 @@ WasteContainer:
   x-derived-from: ""
   x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
   x-license-url: https://github.com/smart-data-models/dataModel.WasteManagement/blob/master/WasteContainer/LICENSE.md
-  x-model-schema: https://scm-ngsi-ld.github.io/smart-data-models/models/WasteContainer/schema.json
+  x-model-schema: https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainer/schema.json
   x-model-tags: ""
   x-version: 0.3.0
