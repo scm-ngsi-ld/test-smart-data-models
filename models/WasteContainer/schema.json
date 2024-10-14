@@ -160,14 +160,14 @@
           "type": "string",
           "description": "Property. Identifier (or name) of the isle where the container is placed. This attribute should be used when entities of type `WasteContainerIsle` are not being modelled specifically. Otherwise, `refWasteContainerIsle` should be used"
         },
-        "status": {
+        "scmStatus": {
           "type": "string",
           "enum": [
             "available",
             "error",
-            "no_contact"
+            "no-contact"
           ],
-          "description": "Property. Container''s status from the Smart City Manager Platform. Enum:''available, error, no_contact''.  -   `available`. Container has no issues and is actively communicating. `error`. Container has one or more issues, might still be communicating. `no_contact`. Container has not communicated in a while."
+          "description": "Property. Container''s status from the Smart City Manager Platform. Enum:''available, error, no-contact''.  -   `available`. Container has no issues and is actively communicating. `error`. Container has one or more issues, might still be communicating. `no-contact`. Container has not communicated in a while."
         },
         "refWasteContainerModel": {
           "anyOf": [

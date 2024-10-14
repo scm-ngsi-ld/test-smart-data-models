@@ -7,7 +7,7 @@
       "numberOfPressings": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/number-of-pressings.html#/numberOfPressings",
       "districtId": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/district-id.html#/districtId",
       "districtName": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/district-name.html#/districtName",
-      "status": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/district-name.html#/status",
+      "scmStatus": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/scm-status.html#/scmStatus",
       "RFID": "https://smartdatamodels.org/dataModel.WasteManagement/RFID",
       "WasteContainerIsle": "https://smartdatamodels.org/dataModel.WasteManagement/WasteContainerIsle",
       "WasteContainerModel": "https://smartdatamodels.org/dataModel.WasteManagement/WasteContainerModel",
