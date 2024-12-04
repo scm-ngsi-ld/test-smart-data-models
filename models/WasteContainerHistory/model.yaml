@@ -1,0 +1,110 @@
+WasteContainerHistory:
+  description: A waste container's history
+  properties:
+    id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Property
+    refWasteContainer:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: The container which the history belongs to
+      x-ngsi:
+        model: http://schema.org/URL
+        type: Relationship
+    dateCreated:
+      description: Entity creation timestamp. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    dateModified:
+      description: Timestamp of the last modification of the entity. This will usually be allocated by the storage platform
+      format: date-time
+      type: string
+      x-ngsi:
+        type: Property
+    binId:
+      description: Id of the waste carrying bin
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    binLoggedTime:
+      description: Time when the bin's level was last logged
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    batteryPercentage:
+      description: The percentage of the battery
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property=
+    fillingLevel:
+      description: Filling level of the container
+      maximum: 1
+      minimum: 0
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    numberOfThrowins:
+      description: The number of times something has been thrown into the container
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    numberOfPressings:
+      description: The number of times the container has pressed its trash
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    solarCharge:
+      description: The amount of solar charge the container is receiving. Expressed in the Ampere-hour format
+      type: number
+      x-ngsi:
+        model: https://schema.org/Number
+        type: Property
+    temperature:
+      description: Temperature inside the container
+      type: number
+      x-ngsi:
+        model: http://schema.org/Number
+  required:
+    - id
+    - type
+  type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteManagement/blob/master/WasteContainer/LICENSE.md
+  x-model-schema: https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainer/schema.json
+  x-model-tags: ""
+  x-version: 0.1.0
