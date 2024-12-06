@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.4.0",
   "modelTags": "",
-  "$id": "https://scm-ngsi-ld.github.io/smart-data-models/models/WasteContainer/schema.json",
+  "$id": "https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainer/schema.json",
   "title": " - Waste Management / Waste Container",
   "description": "A waste container",
   "type": "object",
@@ -168,49 +168,6 @@
             "no-contact"
           ],
           "description": "Property. Container''s status from the Smart City Manager Platform. Enum:''available, error, no-contact''.  -   `available`. Container has no issues and is actively communicating. `error`. Container has one or more issues, might still be communicating. `no-contact`. Container has not communicated in a while."
-        },
-        "refWasteContainerModel": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Container's model. Model:'http://schema.org/URL'"
-        },
-        "refWasteContainerIsle": {
-          "anyOf": [
-            {
-              "type": "string",
-              "minLength": 1,
-              "maxLength": 256,
-              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
-              "description": "Property. Identifier format of any NGSI entity"
-            },
-            {
-              "type": "string",
-              "format": "uri",
-              "description": "Property. Identifier format of any NGSI entity"
-            }
-          ],
-          "description": "Relationship. Isle where the container is placed. Model:'http://schema.org/URL'"
-        },
-        "refDevice": {
-          "type": "array",
-          "items": {
-            "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/EntityIdentifierType"
-          },
-          "minItems": 1,
-          "uniqueItems": true,
-          "description": "Relationship. Reference to the device(s) used to monitor this container. Model:'http://schema.org/URL'"
         },
         "timeInstant": {
           "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/timeInstant"

@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.1.0",
+  "modelTags": "",
+  "$id": "https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainerHistory/schema.json",
+  "title": " - Waste Management / Waste Container History",
+  "description": "A waste container's history",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WasteContainerHistory"
+          ],
+          "description": "Property. NGSI Entity Type: It has to be WasteContainerHistory"
+        },
+        "refWasteContainer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. The WasteContainer which this model belongs to. Model:'http://schema.org/URL'"
+        },
+        "fillingLevel": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "description": "Property. Model:'https://schema.org/Number'. Filling level of the container"
+        },
+        "temperature": {
+          "type": "number",
+          "description": "Property. Temperature inside the container. Model:'http://schema.org/Number'"
+        },
+        "solarCharge": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The amount of solar charge the container is receiving. Expressed in the Ampere-hour format"
+        },
+        "numberOfThrowins": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The number of times something has been thrown into the container"
+        },
+        "numberOfPressings": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The number of times the container has pressed its trash"
+        },
+        "batteryPercentage": {
+          "type": "number",
+          "description": "Property. Model:'https://schema.org/Number'. The percentage of the battery"
+        },
+        "binId": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text. Id of the waste carrying bin"
+        },
+        "binLoggedTime": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Text'. Time when the bin's level was last logged"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "refWasteContainer"
+  ]
+}
