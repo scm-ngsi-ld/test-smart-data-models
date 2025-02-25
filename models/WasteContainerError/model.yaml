@@ -1,0 +1,68 @@
+WasteContainerError:
+  description: A waste container's error
+  properties:
+    id:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: Unique identifier of the entity
+      x-ngsi:
+        type: Property
+    refWasteContainer:
+      anyOf:
+        - description: Identifier format of any NGSI entity
+          maxLength: 256
+          minLength: 1
+          pattern: ^[\w\-\.\{\}\$\+\*\[\]`|~^@!,:\\]+$
+          type: string
+          x-ngsi:
+            type: Property
+        - description: Identifier format of any NGSI entity
+          format: uri
+          type: string
+          x-ngsi:
+            type: Property
+      description: The container which the error belongs to
+      x-ngsi:
+        model: http://schema.org/URL
+        type: Relationship
+    errorStart:
+      description: Time when the error was triggered
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    errorEnd:
+      description: Time when the error was resolved
+      format: date-time
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
+        type: Property
+    errorCode:
+      description: The code of the error
+      type: string
+      x-ngsi:
+        model: https://schema.org/streetAddress
+        type: Property
+  required:
+    - id
+    - type
+  type: object
+  x-derived-from: ""
+  x-disclaimer: 'Redistribution and use in source and binary forms, with or without modification, are permitted  provided that the license conditions are met. Copyleft (c) 2022 Contributors to Smart Data Models Program'
+  x-license-url: https://github.com/smart-data-models/dataModel.WasteManagement/blob/master/WasteContainer/LICENSE.md
+  x-model-schema: https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainer/schema.json
+  x-model-tags: ""
+  x-version: 0.1.0
