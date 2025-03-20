@@ -13,6 +13,7 @@
       "errorStart": "https://scm-ngsi-ld.github.io/test-smart-data-models/human-docs/error-start.html#/errorStart",
       "errorEnd": "https://scm-ngsi-ld.github.io/test-smart-data-models/human-docs/error-end.html#/errorEnd",
       "errorCode": "https://scm-ngsi-ld.github.io/test-smart-data-models/human-docs/error-code.html#/errorCode",
+      "errorMessage": "https://scm-ngsi-ld.github.io/test-smart-data-models/human-docs/error-code.html#/errorMessage",
       "RFID": "https://smartdatamodels.org/dataModel.WasteManagement/RFID",
       "WasteObserved": "https://smartdatamodels.org/dataModel.WasteManagement/WasteObserved",
       "actuationHours": "https://smartdatamodels.org/dataModel.WasteManagement/actuationHours",

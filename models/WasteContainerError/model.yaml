@@ -54,7 +54,13 @@ WasteContainerError:
       description: The code of the error
       type: string
       x-ngsi:
-        model: https://schema.org/streetAddress
+        model: https://schema.org/Text
+        type: Property
+    errorMessage:
+      description: The message of the error
+      type: string
+      x-ngsi:
+        model: https://schema.org/Text
         type: Property
   required:
     - id

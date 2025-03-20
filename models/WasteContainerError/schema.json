@@ -49,6 +49,10 @@
         "errorCode": {
           "type": "string",
           "description": "Property. Model:'https://schema.org/Text. Code of the error"
+        },
+        "errorMessage": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text. Message of the error"
         }
       }
     }
@@ -56,6 +60,8 @@
   "required": [
     "id",
     "type",
+    "errorStart",
+    "errorCode",
     "refWasteContainer"
   ]
 }
