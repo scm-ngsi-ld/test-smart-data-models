@@ -95,6 +95,7 @@
             "construction",
             "hostelry",
             "agriculture",
+            "cardboard",
             "other"
           ],
           "description": "Property. Model:'https://schema.org/Text'. Origin of the waste stored. Enum:'household, municipal, industrial, construction, hostelry, agriculture, other' "
