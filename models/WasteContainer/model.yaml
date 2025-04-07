@@ -559,7 +559,7 @@ WasteContainer:
         model: https://schema.org/Text
         type: Property
     storedWasteOrigin:
-      description: 'Origin of the waste stored. Enum:''household, municipal, industrial, construction, hostelry, agriculture, other'' '
+      description: 'Origin of the waste stored. Enum:''household, municipal, industrial, construction, hostelry, agriculture, cardboard, other'' '
       enum:
         - household
         - municipal
@@ -567,6 +567,7 @@ WasteContainer:
         - construction
         - hostelry
         - agriculture
+        - cardboard
         - other
       type: string
       x-ngsi:

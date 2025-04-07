@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schemaVersion": "0.1.0",
+  "modelTags": "",
+  "$id": "https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainerError/schema.json",
+  "title": " - Waste Management / Waste Container Error",
+  "description": "A waste container's error",
+  "type": "object",
+  "allOf": [
+    {
+      "$ref": "https://smart-data-models.github.io/data-models/common-schema.json#/definitions/GSMA-Commons"
+    },
+    {
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "WasteContainerError"
+          ],
+          "description": "Property. NGSI Entity Type: It has to be WasteContainerError"
+        },
+        "refWasteContainer": {
+          "anyOf": [
+            {
+              "type": "string",
+              "minLength": 1,
+              "maxLength": 256,
+              "pattern": "^[\\w\\-\\.\\{\\}\\$\\+\\*\\[\\]`|~^@!,:\\\\]+$",
+              "description": "Property. Identifier format of any NGSI entity"
+            },
+            {
+              "type": "string",
+              "format": "uri",
+              "description": "Property. Identifier format of any NGSI entity"
+            }
+          ],
+          "description": "Relationship. The WasteContainer which this model belongs to. Model:'http://schema.org/URL'"
+        },
+        "errorStart": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Date'. Date at which the error started"
+        },
+        "errorEnd": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Property. Model:'https://schema.org/Date'. Date at which the error was resolved"
+        },
+        "errorCode": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text. Code of the error"
+        },
+        "errorMessage": {
+          "type": "string",
+          "description": "Property. Model:'https://schema.org/Text. Message of the error"
+        }
+      }
+    }
+  ],
+  "required": [
+    "id",
+    "type",
+    "errorStart",
+    "errorCode",
+    "refWasteContainer"
+  ]
+}
