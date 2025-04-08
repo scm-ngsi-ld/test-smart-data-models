@@ -82,7 +82,7 @@
       "postOfficeBoxNumber": "https://smartdatamodels.org/postOfficeBoxNumber",
       "postalCode": "https://smartdatamodels.org/postalCode",
       "recommendedLoad": "https://smartdatamodels.org/dataModel.WasteManagement/recommendedLoad",
-      "refWasteContainer": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/waste-container.html#/WasteContainer",
+      "refWasteContainer": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/ref-waste-container.html#/refWasteContainer",
       "regulation": "https://smartdatamodels.org/dataModel.WasteManagement/regulation",
       "responsible": "https://smartdatamodels.org/dataModel.WasteManagement/responsible",
       "seeAlso": "https://smartdatamodels.org/seeAlso",
