@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.1.0",
   "modelTags": "",
-  "$id": "https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainerHistory/schema.json",
+  "$id": "https://scm-ngsi-ld.github.io/smart-data-models/models/WasteContainerHistory/schema.json",
   "title": " - Waste Management / Waste Container History",
   "description": "A waste container's history",
   "type": "object",

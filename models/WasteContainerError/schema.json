@@ -2,7 +2,7 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$schemaVersion": "0.1.0",
   "modelTags": "",
-  "$id": "https://scm-ngsi-ld.github.io/test-smart-data-models/models/WasteContainerError/schema.json",
+  "$id": "https://scm-ngsi-ld.github.io/smart-data-models/models/WasteContainerError/schema.json",
   "title": " - Waste Management / Waste Container Error",
   "description": "A waste container's error",
   "type": "object",
