@@ -60,6 +60,15 @@
           "minimum": 0,
           "description": "Property. Model:'https://schema.org/Number'. Weight of the container load"
         },
+        "coordinates": {
+          "type": "array",
+          "description": "Property. Model:'https://schema.org/Number'. Geographic coordinates of the container as an ordered array in [longitude, latitude] order. This is a simple NGSI-LD Property (not the reserved GeoProperty 'location'). Example: [6.6445425, 50.8069247]",
+          "items": {
+            "type": "number"
+          },
+          "minItems": 2,
+          "maxItems": 2
+        },
         "temperature": {
           "type": "number",
           "description": "Property. Temperature inside the container. Model:'http://schema.org/Number'"

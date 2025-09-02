@@ -41,10 +41,7 @@
       "category": "https://smartdatamodels.org/dataModel.WasteManagement/category",
       "color": "https://smartdatamodels.org/color",
       "compliantWith": "https://smartdatamodels.org/dataModel.WasteManagement/compliantWith",
-      "coordinates": {
-          "@container": "@list",
-          "@id": "geojson:coordinates"
-      },
+      "coordinates": "https://scm-ngsi-ld.github.io/smart-data-models/human-docs/coordinates.html#/coordinates",
       "dataProvider": "https://smartdatamodels.org/dataProvider",
       "dateCreated": "https://smartdatamodels.org/dateCreated",
       "dateLastCleaning": "https://smartdatamodels.org/dataModel.WasteManagement/dateLastCleaning",

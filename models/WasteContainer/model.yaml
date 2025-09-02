@@ -163,6 +163,21 @@ WasteContainer:
       x-ngsi:
         model: https://schema.org/color
         type: Property
+    coordinates:
+      description: Geographic coordinates of the container as an ordered array in [longitude, latitude] order. This is a simple NGSI-LD Property (not the reserved GeoProperty `location`).
+      type: array
+      minItems: 2
+      maxItems: 2
+      items:
+        type: number
+        format: double
+      example:
+        - 6.6445425
+        - 50.8069247
+      x-ngsi:
+        type: Property
+        model: https://schema.org/Number
+        uri: https://dockbite.io/ns/coordinates
     dataProvider:
       description: A sequence of characters identifying the provider of the harmonised data entity
       type: string
